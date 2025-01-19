@@ -1,13 +1,13 @@
 import React from 'react';
 import useStyles from './stylesheet';
-import AbouteMe from '../../components/aboute me';
+import { AboutMe } from '../../components';
 
 
 const Resume = () => {
   const classes = useStyles();
 
   return <div className={classes.container}>
-    <AbouteMe/>
+    <AboutMe/>
     </div>
 }
 

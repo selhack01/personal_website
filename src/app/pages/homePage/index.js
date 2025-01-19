@@ -1,7 +1,7 @@
 import React from 'react';
 import useStyles from './stylesheet';
 import bgImage from '../../assets/images/bg.png';
-import TextSlider from '../../components/textSlider';
+import { TextSlider } from '../../components';
 
 const Home = () => {
   const classes = useStyles();
