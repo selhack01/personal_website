@@ -1,14 +1,14 @@
 import React from 'react';
 import useStyles from './stylesheet';
 
-const TextBox = ({placeholder ,type}) => {
+const TextArea = ({ placeholder ,type}) => {
   const classes = useStyles();
 
   return (
     <div className={classes.container}>
-        <input type={type} className={classes.input} placeholder={placeholder}/>
+        <textarea type={type} className={classes.input} placeholder={placeholder}/>
     </div>
   );
 };
 
-export default TextBox;
+export default TextArea;

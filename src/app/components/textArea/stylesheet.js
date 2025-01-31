@@ -3,11 +3,8 @@ import { createUseStyles } from 'react-jss';
 const useStyles = createUseStyles({
   container: {
     display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    textAlign: 'start',
     padding: 45,
-    paddingBottom:0
+    paddingBottom:0,
   },
   input: {
     color: '#eeeeee',
@@ -15,6 +12,8 @@ const useStyles = createUseStyles({
     fontSize: '16px',
     fontWeight: 500,
     width: '100%',
+    height:100,
+    resize:'none',
     backgroundColor: 'transparent',
     border: 'none',
     borderBottom: '2px solid #262626',

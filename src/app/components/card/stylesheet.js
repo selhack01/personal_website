@@ -4,7 +4,6 @@ const useStyles = createUseStyles({
   container: {
     border:'solid 1px rgba(255, 255, 255, 0.1)',
     display: 'flex',
-    // width:'100%',
     flexDirection:'column',
     justifyContent: 'center',
     zIndex:2,
@@ -12,7 +11,7 @@ const useStyles = createUseStyles({
     gap:15,
     padding:25,
     textAlign:'center',
-    marginBottom:70
+    marginBottom:40
   },
   title:{
     color:'#eeeeee',

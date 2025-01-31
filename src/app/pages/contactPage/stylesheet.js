@@ -11,11 +11,12 @@ const useStyles = createUseStyles({
     zIndex:2,
     paddingRight:'20%',
     paddingLeft:'20%',
+    paddingBottom:60
     },
   Cards:{
     display:'flex',
     justifyContent:'space-between',
-    gap:70,  
+    gap:70,
     }
 });
 

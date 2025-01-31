@@ -1,6 +1,6 @@
 import React from 'react';
 import useStyles from './stylesheet';
-import { Card, Section, TextBox } from '../../components';
+import { Button, Card, Section, TextArea, TextBox } from '../../components';
 import { faCode , faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -44,9 +44,19 @@ const Contact = () => {
             <TextBox 
             placeholder={'Name'}
             type={'text'}
-            >
-
-            </TextBox>
+            />
+            <TextBox 
+            placeholder={'Email'}
+            type={'text'}
+            />
+            <TextArea
+            placeholder={'Message'}
+            type={'text'}
+            />
+            <Button
+            title={'Send Message'}
+            style={{margin:45}}
+            />
         </Section>
     </div>
 }
