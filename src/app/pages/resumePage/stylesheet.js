@@ -56,7 +56,22 @@ const useStyles = createUseStyles({
     servicesCards:{
       display:'flex',
       justifyContent:'space-between',
-      gap:70
+      gap:70,    
+    },
+    experience:{
+      display:'flex',
+      flexDirection:'row',
+      justifyContent:'space-between',
+      width:'100%',
+      gap:70,
+    },
+    list:{
+      width:'100%',
+    },
+    li:{
+      display:'flex',
+      width:'100%',
+      padding:25
     }
 });
 

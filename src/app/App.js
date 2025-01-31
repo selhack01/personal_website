@@ -3,6 +3,7 @@ import useStyles from './stylesheet';
 import { Navbar } from './components';
 import Home from './pages/homePage';
 import Resume from './pages/resumePage';
+import Contact from './pages/contactPage';
 
 function App() {
   const classes = useStyles();
@@ -11,6 +12,7 @@ function App() {
     <Navbar/>
     <Home/>
     <Resume/>
+    <Contact/>
     </div>
 }
 

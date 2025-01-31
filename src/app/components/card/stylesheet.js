@@ -11,7 +11,8 @@ const useStyles = createUseStyles({
     alignItems:'center',
     gap:15,
     padding:25,
-    textAlign:'center'
+    textAlign:'center',
+    marginBottom:70
   },
   title:{
     color:'#eeeeee',

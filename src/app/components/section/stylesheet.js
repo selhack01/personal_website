@@ -19,6 +19,9 @@ const useStyles = createUseStyles({
     fontSize:'24px',
     fontWeight:600
   },
+  children:{
+    width:'100%',
+  }
 });
 
 

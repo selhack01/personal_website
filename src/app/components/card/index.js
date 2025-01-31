@@ -7,7 +7,7 @@ const Card = ({ title, description, icon }) => {
 
   return (
     <div className={classes.container}>
-      <FontAwesomeIcon icon={icon} size='2x' color='#4affa4'/>
+      {{icon} ? <FontAwesomeIcon icon={icon} size='2x' color='#4affa4'/> : null}
       <div className={classes.title}>{title}</div>
       <div className={classes.description}>{description}</div>
     </div>

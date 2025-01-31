@@ -1,14 +1,16 @@
 import React from 'react';
 import useStyles from './stylesheet';
-import { Button, Section, Card } from '../../components';
+import { Button, Section, Card,CheckText } from '../../components';
 import { faCode, faCoffee,} from '@fortawesome/free-solid-svg-icons';
-
 
 const Resume = () => {
   const classes = useStyles();
 
   return <div className={classes.container}>
-    <Section title={'About'}>
+    <Section 
+    title={'About'}
+    border={'true'}
+    >
       <div className={classes.datas}>
         <img src="https://picsum.photos/160/180" alt="" className={classes.img}/>
         <div className={classes.textArea}>
@@ -51,6 +53,7 @@ const Resume = () => {
     </Section>
     <Section
     title={'Services'}
+    style={{border:'none'}}
     >
       <div className={classes.servicesCards}>
         <Card
@@ -75,6 +78,75 @@ const Resume = () => {
         description={'Games, playing music, handle network transactions, interacting content etc.'}
         icon={faCoffee}
         />
+      </div>
+      <div className={classes.servicesCards}>
+        <Card
+        title={'Web Development'}
+        description={'Modern and mobile-ready website that will help you reach all of your marketing.'}
+        icon={faCode}
+        />
+        <Card
+        title={'Android Application'}
+        description={'Games, playing music, handle network transactions, interacting content etc.'}
+        icon={faCoffee}
+        />
+      </div>
+    </Section>
+    <div className={classes.experience}>
+      <Section title={'Experience'}>
+        <Card
+        title={'Web Development'}
+        description={'Modern and mobile-ready website that will help you reach all of your marketing.'}
+        />
+        <Card
+        title={'Web Development'}
+        description={'Modern and mobile-ready website that will help you reach all of your marketing.'}
+        />
+      </Section>
+      <Section title={'Education'}>
+        <Card
+        title={'Web Development'}
+        description={'Modern and mobile-ready website that will help you reach all of your marketing.'}
+        />
+        <Card
+        title={'Web Development'}
+        description={'Modern and mobile-ready website that will help you reach all of your marketing.'}
+        />
+      </Section>
+    </div>
+    <Section
+    title={'Knowledge'}
+    border={true}
+    >
+      <div className={classes.li}>
+        <div className={classes.list}>
+          <CheckText>
+            Website hosting
+          </CheckText>
+          <CheckText>
+            Website hosting
+          </CheckText>
+          <CheckText>
+            Website hosting
+          </CheckText>
+          <CheckText>
+            Website hosting
+          </CheckText>  
+        </div>
+        <div className={classes.list}>
+          <CheckText>
+            Website hosting
+          </CheckText>
+          <CheckText>
+            Website hosting
+          </CheckText>
+          <CheckText>
+            Website hosting
+          </CheckText>
+          <CheckText>
+            Website hosting
+          </CheckText>  
+        </div>
       </div>
     </Section>
   </div>
