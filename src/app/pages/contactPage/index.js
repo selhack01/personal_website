@@ -1,7 +1,7 @@
 import React from 'react';
 import useStyles from './stylesheet';
 import { Button, Card, Section, TextArea, TextBox } from '../../components';
-import { faCode , faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faCode , faEnvelope, faPhone, faUserTie } from '@fortawesome/free-solid-svg-icons';
 
 
 const Contact = () => {
@@ -13,26 +13,26 @@ const Contact = () => {
         >
             <div className={classes.Cards}>
                 <Card
-                title={'Web Development'}
-                description={'Modern and mobile-ready website that will help you reach all of your marketing.'}
-                icon={faCode}
+                title={'Phone'}
+                description={'+90 0551 137 8155'}
+                icon={faPhone}
                 />
                 <Card
-                title={'Android Application'}
-                description={'Games, playing music, handle network transactions, interacting content etc.'}
-                icon={faCoffee}
+                title={'Email'}
+                description={'Selhack.businnes@gmail.com    '}
+                icon={faEnvelope}
                 />
             </div>
             <div className={classes.Cards}>
                 <Card
-                title={'Web Development'}
-                description={'Modern and mobile-ready website that will help you reach all of your marketing.'}
+                title={'Address'}
+                description={' 42010 Hadimi Neighborhood Meram/Konya Turkey'}
                 icon={faCode}
                 />
                 <Card
-                title={'Android Application'}
-                description={'Games, playing music, handle network transactions, interacting content etc.'}
-                icon={faCoffee}
+                title={'Freelance Available'}
+                description={'I am available for Freelance hire.'}
+                icon={faUserTie}
                 />
             </div>
       
