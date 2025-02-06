@@ -9,9 +9,12 @@ const Works = () => {
   const filteredData = 
     activeTab === "All" ? data : data.filter((item) => item.type === activeTab);
 
-  return (
-    <div className={classes.container}>
-      <Section title={"Portfolio"} border={true}>
+  return <div className={classes.container}  id="works">
+      <Section 
+      title={"Portfolio"}
+      border={true}
+      background={true}
+      >
         <FilterButtons onTabChange={setActiveTab} />
       </Section>
       <div className={classes.tabs}>
@@ -31,7 +34,7 @@ const Works = () => {
         ))}
       </div>
     </div>
-  );
+
 };
 
 export default Works;

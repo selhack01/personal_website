@@ -6,7 +6,7 @@ import { TextSlider } from '../../components';
 const Home = () => {
   const classes = useStyles();
 
-  return <div className={classes.container}>
+  return <div className={classes.container} id="home">
       <img src={bgImage} alt="" className={classes.img}/>
       <TextSlider className={classes.slider}/>
       <div className={classes.homeFooter}>
@@ -18,7 +18,7 @@ const Home = () => {
             ,  Front-end Developer and
         </div> 
         <div className={classes.row}>
-         UX/UI Designer Based in Konya. {/*burayı düzenle */}
+         Web Developer Based in Konya. {/*burayı düzenle */}
         </div>
       </div>
     </div>

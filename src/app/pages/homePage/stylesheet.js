@@ -9,7 +9,7 @@ const useStyles = createUseStyles({
     justifyContent: 'center',
     alignItems: 'start',
     position: 'relative',
-    zIndex:2,
+    zIndex:1,
     backgroundColor:'#141414',
     flexDirection:'column'
     },

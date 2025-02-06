@@ -1,18 +1,19 @@
 import React from 'react';
 import useStyles from './stylesheet';
 import { Navbar } from './components';
-import {Home , Resume, Contact, Works} from './pages/index';
-
+import { Home, Resume, Contact, Works } from './pages/index';
 
 function App() {
   const classes = useStyles();
 
   return <div className={classes.container}>
-    <Navbar/>
-    <Home/>
-    <Resume/>
-    <Works/>
-    <Contact/>
+    <div className={classes.verticalLine}></div>
+    <div className={classes.verticalLine2}></div>
+      <Navbar />
+      <Home />
+      <Resume />
+      <Works />
+      <Contact />
     </div>
 }
 

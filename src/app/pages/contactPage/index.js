@@ -7,7 +7,7 @@ import { faCode , faEnvelope, faPhone, faUserTie } from '@fortawesome/free-solid
 const Contact = () => {
   const classes = useStyles();
 
-  return <div className={classes.container}>
+  return <div className={classes.container} id="contact">
         <Section
         title={'Contact'}
         >
@@ -40,6 +40,7 @@ const Contact = () => {
         <Section
         title={'Here Me'}
         border={true}
+        background={true}
         >
             <TextBox 
             placeholder={'Name'}

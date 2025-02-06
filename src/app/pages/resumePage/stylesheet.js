@@ -59,10 +59,9 @@ const useStyles = createUseStyles({
       gap:70,    
     },
     experience:{
-      display:'flex',
-      flexDirection:'row',
-      justifyContent:'space-between',
       width:'100%',
+      display:'flex',
+      justifyContent:'space-between',
       gap:70,
     },
     list:{

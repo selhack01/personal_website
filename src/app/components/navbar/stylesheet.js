@@ -3,7 +3,7 @@ import { createUseStyles } from 'react-jss';
 const useStyles = createUseStyles({
   container: {
     display:'flex',
-    padding:'50px',
+    padding:'30px 50px',
     justifyContent:'space-between',
     position:'fixed',
     top:0,

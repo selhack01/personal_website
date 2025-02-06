@@ -6,10 +6,11 @@ import { faCode, faCube, faMobileAlt, faPalette } from '@fortawesome/free-solid-
 const Resume = () => {
   const classes = useStyles();
 
-  return <div className={classes.container}>
+  return <div className={classes.container} id="resume">
     <Section 
     title={'About'}
-    border={'true'}
+    border={true}
+    background={true}
     >
       <div className={classes.datas}>
         <img src="https://picsum.photos/160/180" alt="" className={classes.img}/>
@@ -110,6 +111,7 @@ const Resume = () => {
     <Section
     title={'Knowledge'}
     border={true}
+    background={true}
     >
       <div className={classes.li}>
         <div className={classes.list}>
