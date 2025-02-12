@@ -3,20 +3,25 @@ import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
   container: {
-    display: 'flex',
-    flexDirection:'column',
     justifyContent: 'center',
+    flexDirection:'column',
     alignItems: 'center',
-    position: 'relative',
+    paddingBottom:60,
+    display: 'flex',
+    padding:'0 20%',
     zIndex:2,
-    paddingRight:'20%',
-    paddingLeft:'20%',
-    paddingBottom:60
+    '@media (max-width: 1400px)': {
+      padding: '0 50px',
+    },
     },
   Cards:{
-    display:'flex',
     justifyContent:'space-between',
+    display:'flex',
     gap:70,
+    '@media (max-width: 991px)': {
+      flexDirection: 'column',
+      gap:0
+    },
     }
 });
 

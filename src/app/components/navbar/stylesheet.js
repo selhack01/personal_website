@@ -6,10 +6,10 @@ const useStyles = createUseStyles({
     padding:'30px 50px',
     justifyContent:'space-between',
     position:'fixed',
+    zIndex:3,
     top:0,
-    right:0,
     left:0,
-    zIndex:3
+    right:0
   },
   navigationButtons:{
     display: 'flex',

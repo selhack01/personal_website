@@ -34,7 +34,6 @@ const Works = () => {
         ))}
       </div>
     </div>
-
 };
 
 export default Works;

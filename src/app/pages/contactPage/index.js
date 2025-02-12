@@ -3,7 +3,6 @@ import useStyles from './stylesheet';
 import { Button, Card, Section, TextArea, TextBox } from '../../components';
 import { faCode , faEnvelope, faPhone, faUserTie } from '@fortawesome/free-solid-svg-icons';
 
-
 const Contact = () => {
   const classes = useStyles();
 
@@ -35,7 +34,6 @@ const Contact = () => {
                 icon={faUserTie}
                 />
             </div>
-      
         </Section>
         <Section
         title={'Here Me'}

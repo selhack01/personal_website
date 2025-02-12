@@ -11,25 +11,28 @@ const useStyles = createUseStyles({
     width:'100%'
   },
   animationText: {
-    fontSize:'70px',
+    fontSize:70,
     paddingInlineEnd:20,
     fontFamily:'Roboto , sans-serif',
     fontWeight:600,
     display: 'inline-block',
     whiteSpace: 'nowrap',
     color:'white',
+    '@media (max-width: 1400px)': {
+      fontSize:48
+    },
+    '@media (max-width: 1200px)': {
+      fontSize:35
+    },
+    '@media (max-width: 991px)': {
+      fontSize:28
+    },
   },
-   animationText2: {
-    fontSize:'70px',
-    fontFamily:'Roboto , sans-serif',
-    fontWeight:600,
-    display: 'inline-block',
-    whiteSpace: 'nowrap',
+   green: {
     color:'#4affa4'
   },
   typer:{
-    paddingRight:'10%',
-    paddingLeft:'10%',
+    padding:'0 10%'
   }
 });
 

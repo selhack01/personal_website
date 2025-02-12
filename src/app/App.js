@@ -1,7 +1,7 @@
 import React from 'react';
 import useStyles from './stylesheet';
-import { Navbar } from './components';
 import { Home, Resume, Contact, Works } from './pages/index';
+import { Navbar ,Footer } from './components';
 
 function App() {
   const classes = useStyles();
@@ -14,6 +14,7 @@ function App() {
       <Resume />
       <Works />
       <Contact />
+      <Footer />
     </div>
 }
 

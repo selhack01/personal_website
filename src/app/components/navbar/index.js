@@ -13,9 +13,9 @@ function Navbar() {
       if (homeSection) {
         const homeSectionHeight = homeSection.offsetHeight;
         if (window.scrollY > homeSectionHeight) {
-          setIsTransparent(false); // Home bölümünden çıkınca arka planı siyah yap
+          setIsTransparent(false);
         } else {
-          setIsTransparent(true); // Home bölümündeyken arka planı şeffaf yap
+          setIsTransparent(true);
         }
       }
     };
@@ -26,18 +26,15 @@ function Navbar() {
     };
   }, []);
 
-  return (
-    <div
+  return <div
       className={classes.container}
       style={{
         backgroundColor: isTransparent ? 'transparent' : '#0f0f0f',
         transition: 'background-color 0.3s ease',
       }}
     >
-      <ul className={classes.navigationButtons}>
-        <li>
+      <ul className={classes.logo}>
           <NavButton title='Mehmet Ali ' secondary='Download CV' tertiary='Selek' />
-        </li>
       </ul>
       <ul className={classes.navigationButtons}>
         <li className={classes.text}>
@@ -62,7 +59,6 @@ function Navbar() {
         </li>
       </ul>
     </div>
-  );
 }
 
 export default Navbar;

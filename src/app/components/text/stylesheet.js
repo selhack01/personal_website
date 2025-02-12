@@ -2,23 +2,23 @@ import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
   container: {
-    display: 'flex',
-    width:'100%',
     justifyContent: 'center',
     alignItems:'center',
-    gap:15,
-    paddingRight:25,
-    paddingLeft:25,
     textAlign:'start',
+    display: 'flex',
+    paddingRight:25,
     marginBottom:10,
-    marginTop:10
+    paddingLeft:25,
+    minWidth:200,
+    marginTop:10,
+    gap:15,
   },
   text:{
-    color:'#eeeeee',
     fontFamily:'roboto , sans-serif',
+    color:'#eeeeee',
     fontSize:'16px',
     fontWeight:500,
-    width:'100%'
+    width:'100%',
   },
 });
 

@@ -12,13 +12,15 @@ const Home = () => {
       <div className={classes.homeFooter}>
         <div className={classes.row}>  
           Hello, I’m
-           <div className={classes.green}>
+          <div className={classes.green}>
             Mehmet Ali Selek
-            </div>
+          </div>
+          <div>
             ,  Front-end Developer and
+          </div>
         </div> 
         <div className={classes.row}>
-         Web Developer Based in Konya. {/*burayı düzenle */}
+         3D Artist Based in Konya.
         </div>
       </div>
     </div>

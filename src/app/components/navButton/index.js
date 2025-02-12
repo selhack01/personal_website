@@ -1,12 +1,11 @@
 import React from 'react';
 import useStyles from './stylesheet';
 
-function NavButton({title,secondary,tertiary,onClick}) {
+function NavButton({ title, secondary, tertiary, onClick, isActive }) {
   const classes = useStyles();
 
-  return <button className={`${classes.container} ${classes.containerHover}`}
-    onClick={onClick}>
-    <span className={classes.text}>
+  return <button className={`${classes.container} ${classes.containerHover}`} onClick={onClick}>
+    <span className={classes.text} style={{ color: isActive ? 'white' : '#8a8a8a' }}>
       {title}
       {tertiary ? <span style={{ color: 'white' }}>{tertiary}</span> : null}
     </span>

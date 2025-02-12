@@ -82,8 +82,7 @@ const TextSlider = () => {
           cursor={false}
           repeat={Infinity}
           speed={50}
-          className={classes.animationText2}
-        />
+          className={`${classes.animationText} ${classes.green}`}        />
       </div>
     </div>
   );

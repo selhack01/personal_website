@@ -8,3 +8,4 @@ export { default as CheckText } from "./text";
 export { default as TextBox } from "./textBox";
 export { default as TextArea } from "./textArea";
 export { default as FilterButtons } from "./filterButtons";
+export { default as Footer } from "./footer";
