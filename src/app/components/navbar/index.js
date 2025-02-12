@@ -2,11 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import useStyles from './stylesheet';
 import NavButton from '../navButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
-  const classes = useStyles();
   const [activeSection, setActiveSection] = useState('home');
   const [isTransparent, setIsTransparent] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const classes = useStyles({ menuOpen, activeSection });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +29,7 @@ function Navbar() {
         }
       });
       setActiveSection(currentSection);
-      
+
       if (homeSection) {
         setIsTransparent(scrollPosition < homeSection.offsetHeight);
       }
@@ -37,6 +41,10 @@ function Navbar() {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div
       className={classes.container}
@@ -45,20 +53,23 @@ function Navbar() {
         transition: 'background-color 0.5s ease',
       }}
     >
-      <ul className={classes.navigationButtons}>
+      <ul className={`${classes.navigationButtons} ${menuOpen ? 'open' : ''}`}>
         <li>
           <NavButton title='Mehmet Ali ' secondary='Download CV' tertiary='Selek' />
         </li>
       </ul>
-      <ul className={classes.navigationButtons}>
+      <ul className={`${classes.navMenu} ${menuOpen ? 'open' : ''}`}>
         {['home', 'resume', 'works', 'contact'].map((section) => (
           <li className={classes.text} key={section}>
-            <ScrollLink to={section} smooth={true} duration={500} spy={true} exact={true} offset={-70}>
+            <ScrollLink to={section} smooth={true} duration={500} spy={true} exact={true} offset={-70} onClick={() => setMenuOpen(false)}>
               <NavButton title={section.charAt(0).toUpperCase() + section.slice(1)} isActive={activeSection === section} />
             </ScrollLink>
           </li>
         ))}
       </ul>
+      <div className={classes.menuIcon} onClick={toggleMenu}>
+        <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
+      </div>
     </div>
   );
 }

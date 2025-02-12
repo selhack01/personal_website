@@ -30,11 +30,15 @@ const useStyles = createUseStyles({
       position: 'absolute',
       top: '100%',
       right: 0,
-      backgroundColor: '#0f0f0f',
       width: '100%',
       padding: '10px 0',
+      backgroundColor: (props) => 
+        props.menuOpen && props.activeSection === 'home' ? 'transparent' : '#0f0f0f',
+      textAlign: 'right',
       '&.open': {
-        display: 'block',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-end',
       },
     },
   },
