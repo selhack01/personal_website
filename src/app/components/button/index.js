@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import useStyles from './stylesheet';
 
-const Button = ({title , onClick,style}) => {
+const Button = ({title , onClick, style , type}) => {
   const classes = useStyles();
   const [isHovered, setIsHovered] = useState(false);
 
@@ -13,6 +13,7 @@ const Button = ({title , onClick,style}) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={onClick}
+      type={type}
     >
       {title}
     </button>

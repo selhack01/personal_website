@@ -2,6 +2,7 @@ import React from 'react';
 import useStyles from './stylesheet';
 import { Button, Section, Card,CheckText } from '../../components';
 import { faCode, faCube, faMobileAlt, faPalette } from '@fortawesome/free-solid-svg-icons';
+import photo from '../../assets/images/pp2.jpg'
 
 const Resume = () => {
   const classes = useStyles();
@@ -13,7 +14,7 @@ const Resume = () => {
     background={true}
     >
       <div className={classes.datas}>
-        <img src="https://picsum.photos/160/180" alt="" className={classes.img}/>
+        <img src={photo} alt="" className={classes.img}/>
         <div className={classes.textArea}>
           <div className={classes.infos}>
             Hello! I’m Mehmet Ali, a web developer and junior 3D artist from Turkey. 
@@ -53,7 +54,16 @@ const Resume = () => {
               <p>Selhack.businnes@gmail.com</p>
             </div>
           </div>
-          <Button title='Download CV'/>
+          <Button 
+            title='Download CV'
+            onClick={() => {
+              const link = document.createElement("a");
+              link.href = "/assets/CV.pdf";
+              link.download = "MehmetAliSelek_CV.pdf";
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+          }}/>
         </div>
       </div>
     </Section>

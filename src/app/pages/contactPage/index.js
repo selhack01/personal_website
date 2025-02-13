@@ -2,12 +2,17 @@ import React from 'react';
 import useStyles from './stylesheet';
 import { Button, Card, Section, TextArea, TextBox } from '../../components';
 import { faCode , faEnvelope, faPhone, faUserTie } from '@fortawesome/free-solid-svg-icons';
+import { useForm } from '@formspree/react';
 
 const Contact = () => {
   const classes = useStyles();
+  const [state, handleSubmit] = useForm("xzzdaydp");
+  if (state.succeeded) {
+    alert('Mesajınız başarı ile alınmıştır.')
+  }
 
   return <div className={classes.container} id="contact">
-        <Section
+    <Section
         title={'Contact'}
         >
             <div className={classes.Cards}>
@@ -34,29 +39,38 @@ const Contact = () => {
                 icon={faUserTie}
                 />
             </div>
-        </Section>
-        <Section
+    </Section>
+    <Section
         title={'Here Me'}
         border={true}
         background={true}
         >
-            <TextBox 
-            placeholder={'Name'}
-            type={'text'}
-            />
-            <TextBox 
-            placeholder={'Email'}
-            type={'text'}
-            />
-            <TextArea
-            placeholder={'Message'}
-            type={'text'}
-            />
-            <Button
-            title={'Send Message'}
-            style={{margin:45}}
-            />
-        </Section>
+            <form onSubmit={handleSubmit}>
+                <TextBox 
+                placeholder={'Name'}
+                type={'text'}
+                id='name'
+                name='name'
+                />
+                <TextBox 
+                placeholder={'Email'}
+                id='email'
+                type={'email'}
+                name='email'
+                />
+                <TextArea
+                placeholder={'Message'}
+                type={'text'}
+                id="message"
+                name="message"
+                />
+                <Button
+                type={'submit'}
+                title={'Send Message'}
+                style={{margin:45}}
+                />
+            </form>
+    </Section>
     </div>
 }
 

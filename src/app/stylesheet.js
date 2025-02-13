@@ -29,6 +29,9 @@ const useStyles = createUseStyles({
     borderLeft: 'solid 1px rgba(255, 255, 255, 0.1)',
     borderTop: 'none',
     borderBottom: 'none',
+    '@media (max-width: 1400px)': {
+      display:'none'
+    },
   }
 });
 

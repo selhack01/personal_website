@@ -1,12 +1,18 @@
-import React from 'react';
 import useStyles from './stylesheet';
+import React from 'react';
 
-const TextArea = ({ placeholder ,type}) => {
+const TextArea = ({ placeholder ,type,id,name}) => {
   const classes = useStyles();
 
   return (
     <div className={classes.container}>
-        <textarea type={type} className={classes.input} placeholder={placeholder}/>
+        <textarea 
+        className={classes.input}
+        placeholder={placeholder}
+        type={type}
+        name={name}
+        id={id}
+        />
     </div>
   );
 };

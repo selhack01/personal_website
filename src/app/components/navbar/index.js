@@ -55,7 +55,18 @@ function Navbar() {
     >
       <ul className={`${classes.navigationButtons} ${menuOpen ? 'open' : ''}`}>
         <li>
-          <NavButton title='Mehmet Ali ' secondary='Download CV' tertiary='Selek' />
+          <NavButton 
+          title='Mehmet Ali ' 
+          secondary='Download CV' 
+          tertiary='Selek' 
+          onClick={() => {
+            const link = document.createElement("a");
+            link.href = "/assets/CV.pdf";
+            link.download = "MehmetAliSelek_CV.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }}/>
         </li>
       </ul>
       <ul className={`${classes.navMenu} ${menuOpen ? 'open' : ''}`}>
