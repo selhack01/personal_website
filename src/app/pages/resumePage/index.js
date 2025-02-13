@@ -1,8 +1,8 @@
-import React from 'react';
-import useStyles from './stylesheet';
-import { Button, Section, Card,CheckText } from '../../components';
 import { faCode, faCube, faMobileAlt, faPalette } from '@fortawesome/free-solid-svg-icons';
+import { Button, Section, Card,CheckText } from '../../components';
 import photo from '../../assets/images/pp2.jpg'
+import useStyles from './stylesheet';
+import React from 'react';
 
 const Resume = () => {
   const classes = useStyles();
@@ -55,14 +55,14 @@ const Resume = () => {
             </div>
           </div>
           <Button 
-            title='Download CV'
-            onClick={() => {
-              const link = document.createElement("a");
-              link.href = "/assets/CV.pdf";
-              link.download = "MehmetAliSelek_CV.pdf";
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
+          title='Download CV'
+          onClick={() => {
+            const link = document.createElement("a");
+            link.href = "/assets/CV.pdf";
+            link.download = "MehmetAliSelek_CV.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
           }}/>
         </div>
       </div>
@@ -120,8 +120,8 @@ const Resume = () => {
     </div>
     <Section
     title={'Knowledge'}
-    border={true}
     background={true}
+    border={true}
     >
       <div className={classes.li}>
         <div className={classes.list}>

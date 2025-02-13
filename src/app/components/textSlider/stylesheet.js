@@ -2,22 +2,22 @@ import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
   container: {
-    display: 'flex',
     justifyContent: 'center',
+    position: 'relative',
     alignItems: 'center',
     height: '100vh',
-    position: 'relative',
+    display: 'flex',
+    width:'100%',
     zIndex:2,
-    width:'100%'
   },
   animationText: {
-    fontSize:70,
-    paddingInlineEnd:20,
     fontFamily:'Roboto , sans-serif',
-    fontWeight:600,
     display: 'inline-block',
     whiteSpace: 'nowrap',
+    paddingInlineEnd:20,
+    fontWeight:600,
     color:'white',
+    fontSize:70,
     '@media (max-width: 1400px)': {
       fontSize:48
     },

@@ -38,7 +38,7 @@ const useStyles = createUseStyles({
       left:0,
       backgroundColor: (props) => 
         props.menuOpen && props.activeSection === 'home' ? 'transparent' : '#0f0f0f',
-      textAlign: 'right',
+        textAlign: 'right',
       '&.open': {
         flexDirection: 'column',
         alignItems: 'flex-end',

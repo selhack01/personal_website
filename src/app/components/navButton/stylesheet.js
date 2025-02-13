@@ -2,34 +2,34 @@ import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
   container: {
-    display: 'flex',
     backgroundColor: 'transparent',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'relative',
+    overflow: 'hidden',
+    cursor: 'pointer',
+    display: 'flex',
     border: 'none',
     height: 20,
     width:150,
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'relative',
-    cursor: 'pointer',
-    overflow: 'hidden',
   },
   text: {
+    transition: 'color 0.7s cubic-bezier(.165,.85,.45,1), transform 0.7s cubic-bezier(.165,.85,.45,1)', 
+    fontFamily: 'Roboto, sans-serif',
+    transform: 'translateY(0)', 
     position: 'absolute',
+    color: '#8a8a8a', 
     fontSize: '16px',
     fontWeight:600,
-    fontFamily: 'Roboto, sans-serif',
-    color: '#8a8a8a', 
-    transition: 'color 0.7s cubic-bezier(.165,.85,.45,1), transform 0.7s cubic-bezier(.165,.85,.45,1)', 
-    transform: 'translateY(0)', 
   },
   textHover: {
+    transition: 'color 0.7s cubic-bezier(.165,.85,.45,1), transform 0.7s cubic-bezier(.165,.85,.45,1)', // Yumuşak geçiş
+    fontFamily: 'Roboto, sans-serif',
+    transform: 'translateY(100%)', 
     position: 'absolute',
     fontSize: '16px',
     fontWeight:600,
-    fontFamily: 'Roboto, sans-serif',
     color: 'white', 
-    transform: 'translateY(100%)', 
-    transition: 'color 0.7s cubic-bezier(.165,.85,.45,1), transform 0.7s cubic-bezier(.165,.85,.45,1)', // Yumuşak geçiş
   },
   containerHover: {
     '&:hover $text': {

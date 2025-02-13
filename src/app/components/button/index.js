@@ -7,9 +7,10 @@ const Button = ({title , onClick, style , type}) => {
 
   return <button
   style={{ ...style }}
-      className={`${classes.downloadButton} ${
-        isHovered ? classes.downloadButtonHover : ''
-      }`}
+      className={`
+        ${classes.downloadButton} 
+        ${isHovered ? classes.downloadButtonHover : ''}
+      `}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={onClick}

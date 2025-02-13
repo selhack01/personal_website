@@ -2,27 +2,27 @@ import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
   container: {
-    display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'start',
+    display: 'flex',
+    paddingBottom:0,
     padding: 45,
-    paddingBottom:0
   },
   input: {
-    color: '#eeeeee',
+    transition: 'border-color 0.3s, color 0.3s',
+    borderBottom: '2px solid #262626',
     fontFamily: 'roboto, sans-serif',
+    backgroundColor: 'transparent',
+    color: '#eeeeee',
     fontSize: '16px',
     fontWeight: 500,
-    width: '100%',
-    backgroundColor: 'transparent',
-    border: 'none',
-    borderBottom: '2px solid #262626',
     outline: 'none',
-    transition: 'border-color 0.3s, color 0.3s',
+    border: 'none',
+    width: '100%',
     '&::placeholder': {
-      color: '#aaa',
       transition: 'color 0.3s',
+      color: '#aaa',
     },
     '&:focus': {
       borderBottom: '2px solid white',

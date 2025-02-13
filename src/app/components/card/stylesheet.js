@@ -3,6 +3,7 @@ import { createUseStyles } from 'react-jss';
 const useStyles = createUseStyles({
   container: {
     border:'solid 1px rgba(255, 255, 255, 0.1)',
+    fontFamily:'roboto , sans-serif',
     backgroundColor:'#0f0f0f',
     justifyContent: 'center',
     boxSizing: 'border-box',
@@ -19,7 +20,6 @@ const useStyles = createUseStyles({
     gap:15,
   },
   title:{
-    fontFamily:'roboto , sans-serif',
     margin:'15px 0px',
     color:'#eeeeee',
     fontSize:'16px',
@@ -27,7 +27,6 @@ const useStyles = createUseStyles({
     width: '100%',
   },
   description:{
-    fontFamily:'roboto , sans-serif',
     color:'#bbbbbb',
     fontSize:'16px',
     fontWeight:400,
