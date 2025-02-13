@@ -48,6 +48,9 @@ const useStyles = createUseStyles({
   row:{
     display:'flex',
     padding:5,
+    '@media (max-width: 991px)': {
+      flexDirection:'column',
+    },
   },
   green:{
     color:'#4affa4',
